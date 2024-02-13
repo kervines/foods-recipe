@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  color: #333;
+  background-color: #f1f1f1;
+}
+
+html,
+button {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  padding: 1rem;
+}
+
+.header h1 {
+  font-size: 1.75rem;
+}
+
+.container-recipe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.image-recipe img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.info-recipe {
+  padding: 0 0.5rem;
+  font-size: 0.875rem;
+}
+
+.info-recipe a {
+  color: rgb(45, 163, 184);
+  font-size: 0.875rem;
+}
+
+.btn-recipe {
+  padding: 0.5rem;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.btn-recipe button {
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: rgb(45, 163, 184);
+  color: #f9f9f9;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
