@@ -29,6 +29,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.card {
+  margin-bottom: 1rem;
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -54,7 +58,8 @@ body {
 }
 
 .instructions ol {
-  list-style: none;
+  list-style: disc;
+  margin-left: 1rem;
 }
 
 .btn-recipe {
@@ -73,6 +78,13 @@ body {
   font-size: 1.275rem;
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
+  transition: 0.2s;
+
+  &:hover {
+    box-shadow: 4px 4px 0 #e35;
+    color: #f1f1f1;
+    background-color: #333;
+  }
 }
 
 /* Modal */
@@ -92,4 +104,20 @@ body {
   position: absolute;
   top: -20px;
   right: -10px;
+}
+
+@media (min-width: 720px) {
+  .card {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+  }
+  .info {
+    overflow-y: scroll;
+    height: 250px;
+  }
+
+  .instructions ol {
+    list-style: disc;
+    margin-left: 2rem;
+  }
 }
