@@ -88,6 +88,11 @@ input {
   font-weight: 600;
   text-transform: uppercase;
   font-weight: bold;
+  transition: 0.2s;
+
+  &:hover {
+    color: var(--color-red-4);
+  }
 }
 
 .menu li a i {
@@ -186,6 +191,7 @@ input {
   gap: 0.575rem;
   box-shadow: var(--shadow);
   height: 280px;
+  background-color: var(--g10);
 }
 .image-recipe img {
   height: 100%;
@@ -228,6 +234,7 @@ input {
   font-size: 1.25rem;
   background-color: var(--color-red-2);
   color: var(--color-w1);
+  cursor: pointer;
 }
 
 /* Footer */
@@ -238,6 +245,8 @@ input {
   padding: 2rem;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--color-red-2);
+  color: #fff;
 }
 
 #footer ul {
@@ -247,13 +256,21 @@ input {
 }
 
 #footer li a {
-  transition: 0.3s;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 500;
 }
 
 #footer li a::after {
+  content: '';
+  transition: 0.2s;
+  display: block;
+  height: 3px;
+  width: 0;
 }
 
 #footer li a:hover::after {
+  background-color: #f5ff6c;
   width: 100%;
 }
 
@@ -261,10 +278,16 @@ input {
   font-size: 1.125rem;
 }
 
+.perfil h2 {
+  font-family: 'Sansita Swashed', system-ui;
+}
+
 .perfil p {
+  font-weight: 400;
   font-style: italic;
 }
 
 .perfil span {
   font-weight: bold;
+  color: #f5ff6c;
 }
