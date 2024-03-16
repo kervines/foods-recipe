@@ -18,7 +18,7 @@ async function fetchSpoonacular() {
   // });
 }
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 4; i++) {
   fetchSpoonacular();
 }
 
@@ -32,7 +32,8 @@ for (let i = 0; i < 5; i++) {
 // }
 
 function createRecipeCard(image, title, instructions, price) {
-  const container = document.querySelector('.container-recipe');
+  console.log(instructions);
+  const container = document.querySelector('.cards-container');
   const card = document.createElement('div');
   card.classList.add('card');
   card.innerHTML = `<div class="image-recipe">
@@ -41,16 +42,13 @@ function createRecipeCard(image, title, instructions, price) {
     'https://iseb3.com.br/assets/camaleon_cms/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png'
   } alt="${title}">
 </div>
-<div class='info'>
   <div class="info-recipe">
-    <h2>${title}</h2>
-    <div class='instructions'>
-    ${instructions}
-    </div>
-  </div>
-  <div class="btn-recipe">
-    <button>$${price}</button>
-  </div>
-</div>`;
+            <h2>${title}</h2>
+            <div class="description">
+              ${instructions}
+            </div>
+            <a href="#">Mais informações</a>
+            <button class="">R$ ${price}</button>
+  </div>`;
   container.appendChild(card);
 }

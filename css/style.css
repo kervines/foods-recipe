@@ -205,15 +205,21 @@ input {
   flex-direction: column;
   gap: 0.5rem;
 }
-.info-recipe p {
-  font-size: 1.125rem;
+.description {
   overflow-y: scroll;
-  height: 100%;
+  height: 500px;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  line-height: 1.3;
 }
-.info-recipe p::-webkit-scrollbar {
+.description ol,
+.description ul {
+  list-style: initial;
+}
+.description::-webkit-scrollbar {
   width: 5px;
 }
-.info-recipe p::-webkit-scrollbar-thumb {
+.description::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: var(--color-red-2);
 }
@@ -226,6 +232,7 @@ input {
 }
 .info-recipe button {
   border: none;
+  width: 100%;
   padding: 0.5rem 1rem;
   font-weight: bold;
   font-size: 1.125rem;
