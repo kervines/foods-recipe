@@ -1,0 +1,44 @@
+/* Header */
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  background-color: var(--color-w1);
+  box-shadow: var(--shadow);
+}
+.logo {
+  font-family: 'Sansita Swashed', system-ui;
+}
+.logo span {
+  color: var(--color-red-2);
+}
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+.menu li a {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.2s;
+
+  &:hover {
+    color: var(--color-red-4);
+  }
+}
+
+.menu li a i {
+  color: var(--color-red-2);
+}
+
+#subs {
+  padding: 0.5rem 1rem;
+  color: var(--color-w1);
+  background-color: var(--color-red-2);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+}
